@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Input</title>
+  </head>
+  <body>
+    <h1>Forms and Input</h1>
+    <form action="process.php">
+      <!-- Text -->
+      <div>
+        <lable for="name">Name</lable><br />
+        <input type="text" name="name" id="name" />
+      </div>
+      <!-- Email -->
+      <div>
+        <lable for="email">Email</lable><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="jdelacruz@email.com"
+        />
+      </div>
+
+      <!-- textarea -->
+      <div>
+        <lable for="message">Message</lable><br />
+        <textarea name="message" id="message"></textarea>
+      </div>
+
+      <!-- dropdown -->
+      <div>
+        <lable for="gender">Gender</lable><br />
+        <select name="gender" id="gender">
+          <option value="male">MALE</option>
+          <option value="female">FEMALE</option>
+          <option value="other">OTHERS</option>
+        </select>
+      </div>
+
+      <!-- number -->
+      <div>
+        <lable for="age">AGE</lable><br />
+        <input type="number" name="age" id="age" />
+      </div>
+      <!-- Date -->
+      <div>
+        <lable for="bithdate">Birthdate:</lable><br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+      <!-- Radio Button -->
+      <div>
+        <lable for="membership">MEMBERSHIP:</lable><br />
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="classic"
+          checked
+        />Classic
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="silver"
+        />Silver
+        <input
+          type="radio"
+          name="membership"
+          id="membership"
+          value="gold"
+        />Gold
+      </div>
+      <!-- Submit -->
+      <div>
+        <input type="submit" value="Submit" />
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
